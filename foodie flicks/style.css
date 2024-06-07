@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('bg.jpg');
+    backdrop-filter: blur(80px);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px 320px 20px;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin: 0 10px;
+    font-size:1.3rem;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-image: url('your-background-image.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
+
+.navbar-btn {
+    background-color: #155bde; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    width:auto; /* Auto width by default */
+    height: 35px;
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    text-align: center; /* Center text */
+    display: inline-block; /* Inline-block for margin and padding to work */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+.navbar-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-btn:hover {
+    background-color: green; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.navbar-btn:active {
+    background-color: #004085; /* Even darker shade when pressed */
+    transform: translateY(0); /* Reset lift on press */
+}
+
+.navbar-btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+}
+
+@media (max-width: 768px) {
+    .navbar-btn {
+        padding: 12px 24px; /* Increase padding on smaller screens */
+        font-size: 18px; /* Increase font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-btn {
+        width: 100%; /* Full width on very small screens */
+        padding: 14px 28px; /* Further increase padding on very small screens */
+        font-size: 20px; /* Further increase font size on very small screens */
+    }
+}
+.text{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mh{
+    position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Adjust text color as needed */
+            font-size: 49px; /* Adjust font size as needed */
+}
+
+.subh {
+    position: absolute;
+            top: 34%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Adjust text color as needed */
+            font-size: 39px; /* Adjust font size as needed */
+}
+
+.subsubh{
+    position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Adjust text color as needed */
+            font-size: 29px; /* Adjust font size as needed */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin: 0 0 10px;
+}
+
+.grid-item button {
+    padding: 8px 16px;
+    margin-top: 21px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.h2{
+    padding-left: 10px;
+    padding-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.para1{
+    padding-left: 10px;
+    padding-top: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.para2{
+    padding-left: 10px;
+    padding-top: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h3{
+    padding-left: 10px;
+    padding-top: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.para3{
+    padding-left: 10px;
+    padding-top: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.para4{
+    padding-left: 10px;
+    padding-top: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h1{
+    padding-left: 10px;
+    padding-top: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.card{
+    padding-top: 6px;
+}
+
+
+.btn:hover{
+    background-color:green ;
+    transform: translateY(-2px); 
+   cursor: pointer;
+}
+
+.sec{
+    background-color: #b6bcbd;
+}
+.foot
+    {
+        background-color: #0d0d0d;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        bottom: 100;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        foot {
+            position: absolute;
+        }
+    }
